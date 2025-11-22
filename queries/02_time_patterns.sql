@@ -50,4 +50,4 @@ FROM hourly_engagement
 ORDER BY engagement_count DESC
 LIMIT 10;
 
--- ASSUMPTION: All timestamps in UTC. In production, consider user timezone distribution
+-- ASSUMPTION: All timestamps in UTC. consider user timezone distribution
