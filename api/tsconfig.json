@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "module": "es2022",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2022",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "strictBindCallApply": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "bundler",
+        "paths": {
+            "@config/*": ["./src/config/*"],
+            "@database/*": ["./src/database/*"],
+            "@common/*": ["./src/common/*"],
+            "@modules/*": ["./src/modules/*"],
+            "@analytics/*": ["./src/analytics/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}
