@@ -6,7 +6,7 @@ WITH date_params AS (
 weighted_engagement AS (
     SELECT
         e.post_id,
-        -- Weight engagements by value (adjust based on business priorities)
+        -- Weight engagements by value
         COUNT(*) FILTER (WHERE type = 'view') AS views,
         COUNT(*) FILTER (WHERE type = 'like') AS likes,
         COUNT(*) FILTER (WHERE type = 'comment') AS comments,
